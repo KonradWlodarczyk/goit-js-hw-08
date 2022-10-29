@@ -5,6 +5,7 @@ const form = document.querySelector('.feedback-form');
 
 form.addEventListener('submit', handleSubmit);
 
+
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -14,7 +15,7 @@ function handleSubmit(event) {
     return console.log('Please fill in all the fields!');
   }
 
-  console.log(`submited email: "${email.value}", message: "${message.value}"`);
+  console.log(currentStorage);
 
   localStorage.removeItem(currentStorage);
 
