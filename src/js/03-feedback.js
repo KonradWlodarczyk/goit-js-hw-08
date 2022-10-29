@@ -15,7 +15,7 @@ function handleSubmit(event) {
     return console.log('Please fill in all the fields!');
   }
 
-  console.log(currentStorage);
+  console.log(formData);
 
   localStorage.removeItem(currentStorage);
 
